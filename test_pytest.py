@@ -24,7 +24,7 @@ def test_mark():
 
 
 @pytest.mark.skipif(10 > 1, reason='Because 10 > 1')
-def test_mark():
+def test_mark_2():
     text = 'Test'
     assert len(text) == 5
 

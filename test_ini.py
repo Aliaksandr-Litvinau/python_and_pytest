@@ -1,2 +1,2 @@
-def test_ini(foo):
-    print(foo)
+def test_ini(get_option_foo):
+    print(get_option_foo)
