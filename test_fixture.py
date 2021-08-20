@@ -6,17 +6,17 @@ import os
 directory = 'test_dir'
 
 
-@pytest.fixture()
-def create_dir():
-    if not os.path.exists(directory):
-        os.makedirs(directory)
+# @pytest.fixture()
+# def create_dir():
+#     if not os.path.exists(directory):
+#         os.makedirs(directory)
+#
+#
+# def test_create_dir(create_dir):
+#     assert os.path.exists(directory), 'dir not exist'
 
 
-def test_create_dir(create_dir):
-    assert os.path.exists(directory), 'dir not exist'
-
-
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="session")
 def get_random_number():
     number = random.randint(1, 100)
     print(number)

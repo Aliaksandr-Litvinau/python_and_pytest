@@ -23,6 +23,7 @@ def pytest_addoption(parser):
                      help="foo: bar or baz")
 
 
+
 @pytest.fixture
 def get_option_foo(request):
     return request.config.getoption("--foo")
