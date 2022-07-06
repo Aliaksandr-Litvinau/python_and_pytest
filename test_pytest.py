@@ -20,7 +20,7 @@ def test_my_mark():
 @pytest.mark.xfail(reason='must be four')
 def test_mark():
     text = 'Test'
-    assert len(text) == 4
+    assert len(text) == 5
 
 
 @pytest.mark.skip(reason='must be four')
